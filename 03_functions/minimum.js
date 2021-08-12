@@ -9,3 +9,7 @@
   console.log(min(0, -10));
   // → -10
 */
+
+function min(lhs, rhs) {
+	return lhs < rhs ? lhs : rhs;
+}
