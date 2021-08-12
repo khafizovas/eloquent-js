@@ -12,6 +12,7 @@ My solutions of [Eloquent JavaScript](https://eloquentjavascript.net/index.html)
   1. Values, Types, and Operators
   2. Program Structure
      1. [Looping a triangle](02_program_structure/looping_a_triangle.js)
+     2. [FizzBuzz](02_program_structure/fizzbuzz.js)
   3. Functions
   4. Data Structures: Objects and Arrays
   5. Higher-order Functions
