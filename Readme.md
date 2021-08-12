@@ -1,6 +1,6 @@
 # Eloquent JavaScript exercise solutions
 
-My solutions of [Eloquent JavaScript](https://eloquentjavascript.net/index.html) exercises.
+My solutions of [Eloquent JavaScript](https://eloquentjavascript.net/index.html) exercises (in the process).
 
 ---
 
@@ -11,6 +11,7 @@ My solutions of [Eloquent JavaScript](https://eloquentjavascript.net/index.html)
 
   1. Values, Types, and Operators
   2. Program Structure
+     1. [Looping a triangle](02_program_structure/looping_a_triangle.js)
   3. Functions
   4. Data Structures: Objects and Arrays
   5. Higher-order Functions
