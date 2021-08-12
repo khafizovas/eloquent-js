@@ -15,6 +15,9 @@ My solutions of [Eloquent JavaScript](https://eloquentjavascript.net/index.html)
      2. [FizzBuzz](02_program_structure/fizzbuzz.js)
      3. [Chessboard](02_program_structure/chessboard.js)
   3. Functions
+     1. [Minimum](03_functions/minimum.js)
+     2. [Recursion](03_functions/recursion.js)
+     3. [Bean counting](03_functions/bean_counting.js)
   4. Data Structures: Objects and Arrays
   5. Higher-order Functions
   6. The Secret Life of Objects
