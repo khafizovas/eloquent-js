@@ -17,3 +17,22 @@
   console.log(arrayValue);
   // → [5, 4, 3, 2, 1]
 */
+
+function reverseArray(array) {
+	const reversedArr = [];
+
+	for (let i = array.length - 1; i >= 0; --i) {
+		reversedArr.push(array[i]);
+	}
+
+	return reversedArr;
+}
+
+function reverseArrayInPlace(array) {
+	for (let i = 0; i < array.length / 2; ++i) {
+		[array[i], array[array.length - i - 1]] = [
+			array[array.length - i - 1],
+			array[i],
+		];
+	}
+}
