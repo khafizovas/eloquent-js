@@ -22,3 +22,21 @@
   console.log(sum(range(1, 10)));
   // → 55
 */
+
+function range(start, stop, step = 1) {
+	const arrFromRange = [];
+
+	for (
+		let i = start;
+		(start < stop && i <= stop) || (start > stop && i >= stop);
+		i += step
+	) {
+		arrFromRange.push(i);
+	}
+
+	return arrFromRange;
+}
+
+function sum(arrOfNums) {
+	return arrOfNums.reduce((elemsSum, elem) => elemsSum + elem);
+}
