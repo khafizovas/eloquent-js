@@ -18,3 +18,19 @@
   console.log(countChar("kakkerlak", "k"));
   // → 4
 */
+
+function countBs(string) {
+	return countChar(string, 'B');
+}
+
+function countChar(string, char) {
+	let charCounter = 0;
+
+	for (let cur of string) {
+		if (cur == char) {
+			++charCounter;
+		}
+	}
+
+	return charCounter;
+}
