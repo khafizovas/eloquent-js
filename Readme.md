@@ -19,6 +19,10 @@ My solutions of [Eloquent JavaScript](https://eloquentjavascript.net/index.html)
      2. [Recursion](03_functions/recursion.js)
      3. [Bean counting](03_functions/bean_counting.js)
   4. Data Structures: Objects and Arrays
+     1. [The sum of a range](04_data_structures/the_sum_of_a_range.js)
+     2. [Reversing and array](04_data_structures/the_sum_of_a_range.js)
+     3. [A list](04_data_structures/a_list.js)
+     4. [Deep comparison](04_data_structures/deep_comparison.js)
   5. Higher-order Functions
   6. The Secret Life of Objects
   7. Project: A Robot
