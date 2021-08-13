@@ -14,3 +14,9 @@
   // → 2
   // → 1
 */
+
+function loop(startValue, testFunc, updFunc, bodyFunc) {
+	for (let value = startValue; testFunc(value); value = updFunc(value)) {
+		bodyFunc(value);
+	}
+}
