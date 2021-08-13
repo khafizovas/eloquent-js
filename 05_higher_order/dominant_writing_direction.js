@@ -16,3 +16,16 @@
   console.log(dominantDirection("Hey, مساء الخير"));
   // → rtl
 */
+
+const { characterScript, countBy } = require('./helpers/functions');
+
+function dominantDirection(text) {
+	const directionCounters = countBy(
+		text,
+		(char) => characterScript(char.codePointAt(0))?.direction
+	).filter((counter) => counter.name);
+
+	return directionCounters.reduce((max, cur) =>
+		cur.count > max.count ? cur : max
+	).name;
+}
