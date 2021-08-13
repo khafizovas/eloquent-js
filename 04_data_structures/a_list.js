@@ -18,9 +18,9 @@
   A linked list
   A nice thing about lists is that they can share parts of their structure. For example, if I 
   create two new values {value: 0, rest: list} and {value: -1, rest: list} (with list referring 
-    to the binding defined earlier), they are both independent lists, but they share the structure 
-    that makes up their last three elements. The original list is also still a valid three-element 
-    list.
+  to the binding defined earlier), they are both independent lists, but they share the structure 
+  that makes up their last three elements. The original list is also still a valid three-element 
+  list.
 
   Write a function arrayToList that builds up a list structure like the one shown when given [1, 2, 3] 
   as argument. Also write a listToArray function that produces an array from a list. Then add a helper 
@@ -42,3 +42,34 @@
   console.log(nth(arrayToList([10, 20, 30]), 1));
   // → 20
 */
+
+function arrayToList(array) {
+	let list = null;
+
+	for (let i = array.length - 1; i >= 0; --i) {
+		list = prepend(array[i], list);
+	}
+
+	return list;
+}
+
+function listToArray(list) {
+	const array = [];
+
+	while (nth(list, array.length)) {
+		array.push(nth(list, array.length));
+	}
+
+	return array;
+}
+
+function prepend(newValue, oldRest) {
+	return { value: newValue, rest: oldRest };
+}
+
+function nth(list, index) {
+	if (!list) return undefined;
+	if (index === 0) return list.value;
+
+	return nth(list.rest, --index);
+}
