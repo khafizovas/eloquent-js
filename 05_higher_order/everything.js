@@ -17,3 +17,15 @@
   console.log(every([], n => n < 10));
   // → true
 */
+
+function every(array, predicateFunc) {
+	for (let elem of array) {
+		if (!predicateFunc(elem)) return false;
+	}
+
+	return true;
+}
+
+function everyUsingSome(array, predicateFunc) {
+	return !array.some((elem) => !predicateFunc(elem));
+}
