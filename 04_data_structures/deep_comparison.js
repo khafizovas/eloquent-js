@@ -23,3 +23,17 @@
   console.log(deepEqual(obj, {here: {is: "an"}, object: 2}));
   // → true
 */
+
+function deepEqual(lhs, rhs) {
+	if (typeof lhs !== 'object' && typeof hrs !== 'object') return lhs === rhs;
+	if (lhs === null && rhs === null) return true;
+
+	const lhsKeys = Object.keys(lhs);
+	const rhsKeys = Object.keys(rhs);
+
+	if (lhsKeys.length !== rhsKeys.length) return false;
+
+	return lhsKeys.every(
+		(key) => rhsKeys.includes(key) && deepEqual(lhs[key], rhs[key])
+	);
+}
