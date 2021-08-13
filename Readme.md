@@ -24,6 +24,10 @@ My solutions of [Eloquent JavaScript](https://eloquentjavascript.net/index.html)
      3. [A list](04_data_structures/a_list.js)
      4. [Deep comparison](04_data_structures/deep_comparison.js)
   5. Higher-order Functions
+     1. [Flattening](05_higher_order/flattening.js)
+     2. [Your own loop](05_higher_order/your_own_loop.js)
+     3. [Everything](05_higher_order/everything.js)
+     4. [Dominant writing direction](05_higher_order/dominant_writing_direction.js)
   6. The Secret Life of Objects
   7. Project: A Robot
   8. Bugs and Errors
