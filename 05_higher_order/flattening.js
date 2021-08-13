@@ -6,3 +6,7 @@
   // Your code here.
   // → [1, 2, 3, 4, 5, 6]
 */
+
+let arrays = [[1, 2, 3], [4, 5], [6]];
+
+console.log(arrays.reduce((flat, cur) => flat.concat(cur), []));
