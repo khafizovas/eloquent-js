@@ -36,7 +36,9 @@ class Group {
 		this.values = [];
 	}
 
-	add(value) {}
+	add(value) {
+		if (this.values.indexOf(value) !== -1) this.values.push(value);
+	}
 
 	delete(value) {}
 
