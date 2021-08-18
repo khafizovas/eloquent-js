@@ -40,7 +40,11 @@ class Group {
 		if (this.values.indexOf(value) !== -1) this.values.push(value);
 	}
 
-	delete(value) {}
+	delete(value) {
+		const valueIndex = this.values.indexOf(value);
+
+		if (valueIndex !== -1) this.values.splice(valueIndex, 1);
+	}
 
 	has(value) {}
 
