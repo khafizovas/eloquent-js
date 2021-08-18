@@ -37,13 +37,11 @@ class Group {
 	}
 
 	add(value) {
-		if (this.values.indexOf(value) === -1) this.values.push(value);
+		if (!this.has(value)) this.values.push(value);
 	}
 
 	delete(value) {
-		const valueIndex = this.values.indexOf(value);
-
-		if (valueIndex !== -1) this.values.splice(valueIndex, 1);
+		if (this.has(value)) this.values.splice(this.values.indexOf(value), 1);
 	}
 
 	has(value) {
