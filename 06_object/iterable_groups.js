@@ -59,7 +59,13 @@ class GroupIterator {
 		this.currentIndex = 0;
 	}
 
-	next() {}
+	next() {
+		if (this.currentIndex === this.groupValues.length) {
+			return { done: true };
+		}
+
+		return { value: this.groupValues[this.currentIndex++], done: false };
+	}
 }
 
 // Test
