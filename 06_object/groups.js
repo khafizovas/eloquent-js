@@ -46,7 +46,9 @@ class Group {
 		if (valueIndex !== -1) this.values.splice(valueIndex, 1);
 	}
 
-	has(value) {}
+	has(value) {
+		return this.values.indexOf(value) !== -1;
+	}
 
 	static from(values) {}
 }
