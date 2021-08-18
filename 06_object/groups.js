@@ -60,3 +60,5 @@ class Group {
 		return groupFromValues;
 	}
 }
+
+module.exports = Group;

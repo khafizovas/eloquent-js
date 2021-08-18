@@ -19,39 +19,11 @@
   // → c
 */
 
-class Group {
-	constructor() {
-		this.values = [];
-	}
+const Group = require('./groups');
 
-	add(value) {
-		if (!this.has(value)) {
-			this.values.push(value);
-		}
-	}
-
-	delete(value) {
-		if (this.has(value)) {
-			this.values.splice(this.values.indexOf(value), 1);
-		}
-	}
-
-	has(value) {
-		return this.values.indexOf(value) !== -1;
-	}
-
-	static from(values) {
-		const groupFromValues = new Group();
-
-		values.forEach((value) => groupFromValues.add(value));
-
-		return groupFromValues;
-	}
-
-	[Symbol.iterator]() {
-		return new GroupIterator(this);
-	}
-}
+Group.prototype[Symbol.iterator] = function () {
+	return new GroupIterator(this);
+};
 
 class GroupIterator {
 	constructor(group) {
@@ -67,12 +39,3 @@ class GroupIterator {
 		return { value: this.groupValues[this.currentIndex++], done: false };
 	}
 }
-
-// Test
-
-for (let value of Group.from(['a', 'b', 'c'])) {
-	console.log(value);
-}
-// → a
-// → b
-// → c
