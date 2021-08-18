@@ -47,6 +47,16 @@ class Group {
 
 		return groupFromValues;
 	}
+
+	[Symbol.iterator]() {
+		return new GroupIterator(this);
+	}
+}
+
+class GroupIterator {
+	constructor(group) {}
+
+	next() {}
 }
 
 // Test
