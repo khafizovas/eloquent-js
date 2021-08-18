@@ -29,6 +29,10 @@ My solutions of [Eloquent JavaScript](https://eloquentjavascript.net/index.html)
      3. [Everything](05_higher_order/everything.js)
      4. [Dominant writing direction](05_higher_order/dominant_writing_direction.js)
   6. The Secret Life of Objects
+     1. [A vector type](06_object/a_vector_type.js)
+     2. [Groups](06_object/groups.js)
+     3. [Iterable groups](06_object/iterable_groups.js)
+     4. [Borrowing a method](06_object/borrowing_a_method.js)
   7. Project: A Robot
   8. Bugs and Errors
   9. Regular Expressions
