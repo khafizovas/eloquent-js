@@ -37,7 +37,7 @@ class Group {
 	}
 
 	add(value) {
-		if (this.values.indexOf(value) !== -1) this.values.push(value);
+		if (this.values.indexOf(value) === -1) this.values.push(value);
 	}
 
 	delete(value) {
@@ -50,7 +50,13 @@ class Group {
 		return this.values.indexOf(value) !== -1;
 	}
 
-	static from(values) {}
+	static from(values) {
+		const groupFromValues = new Group();
+
+		values.forEach((value) => groupFromValues.add(value));
+
+		return groupFromValues;
+	}
 }
 
 let group = Group.from([10, 20]);
