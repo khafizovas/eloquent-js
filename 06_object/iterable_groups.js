@@ -54,7 +54,10 @@ class Group {
 }
 
 class GroupIterator {
-	constructor(group) {}
+	constructor(group) {
+		this.groupValues = group.values;
+		this.currentIndex = 0;
+	}
 
 	next() {}
 }
