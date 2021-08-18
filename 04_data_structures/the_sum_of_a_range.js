@@ -38,5 +38,5 @@ function range(start, stop, step = 1) {
 }
 
 function sum(arrOfNums) {
-	return arrOfNums.reduce((elemsSum, elem) => elemsSum + elem);
+	return arrOfNums.reduce((elemsSum, elem) => elemsSum + elem, 0);
 }
