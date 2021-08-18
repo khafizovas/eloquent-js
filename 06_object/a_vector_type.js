@@ -18,3 +18,22 @@
   console.log(new Vec(3, 4).length);
   // → 5
 */
+
+class Vec {
+	constructor(x, y) {
+		this.x = x;
+		this.y = y;
+	}
+
+	plus(rhs) {
+		return new Vec(this.x + rhs.x, this.y + rhs.y);
+	}
+
+	minus(rhs) {
+		return new Vec(this.x - rhs.x, this.y - rhs.y);
+	}
+
+	get length() {
+		return Math.sqrt(this.x ** 2 + this.y ** 2);
+	}
+}
