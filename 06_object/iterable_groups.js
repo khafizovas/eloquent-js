@@ -18,3 +18,42 @@
   // → b
   // → c
 */
+
+class Group {
+	constructor() {
+		this.values = [];
+	}
+
+	add(value) {
+		if (!this.has(value)) {
+			this.values.push(value);
+		}
+	}
+
+	delete(value) {
+		if (this.has(value)) {
+			this.values.splice(this.values.indexOf(value), 1);
+		}
+	}
+
+	has(value) {
+		return this.values.indexOf(value) !== -1;
+	}
+
+	static from(values) {
+		const groupFromValues = new Group();
+
+		values.forEach((value) => groupFromValues.add(value));
+
+		return groupFromValues;
+	}
+}
+
+// Test
+
+for (let value of Group.from(['a', 'b', 'c'])) {
+	console.log(value);
+}
+// → a
+// → b
+// → c
