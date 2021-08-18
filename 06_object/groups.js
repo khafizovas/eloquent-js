@@ -32,7 +32,9 @@
 */
 
 class Group {
-	constructor() {}
+	constructor() {
+		this.values = [];
+	}
 
 	add(value) {}
 
